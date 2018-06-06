@@ -1,0 +1,44 @@
+{
+    "root": true,
+    "extends": [
+        "airbnb",
+        "prettier",
+        "plugin:lodash-fp/recommended"
+    ],
+    "plugins": [
+        "lodash-fp",
+        "prettier"
+    ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 80,
+                "singleQuote": true,
+                "tabWidth": 4,
+                "trailingComma": "all"
+            }
+        ],
+        "no-shadow": [
+            0
+        ],
+        "func-names": [
+            "warn",
+            "as-needed"
+        ],
+        "no-use-before-define": ["error", {
+            "functions": false,
+            "variables": false,
+            "classes": false
+        }],
+        "consistent-return": "off",
+        "no-underscore-dangle": "off",
+        "prefer-promise-reject-errors": "off",
+        "no-unused-expressions": "off",
+        "lodash-fp/use-fp": "error"
+    }
+}
